@@ -1,0 +1,4 @@
+$taskName = ""
+$taskCmd = ""
+
+New-ScheduledTask 

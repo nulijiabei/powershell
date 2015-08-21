@@ -1,0 +1,1 @@
+get-wmiobject win32_perfformatteddata_perfos_memory | select-object availablekbytes | out-gauge –type digital –refresh 0:0:1

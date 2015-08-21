@@ -1,0 +1,6 @@
+Install
+
+\\evs1\packages$\Microsoft\DOT.NET.AddIns\MSChart.exe
+
+MKDIR C:\Health\*
+

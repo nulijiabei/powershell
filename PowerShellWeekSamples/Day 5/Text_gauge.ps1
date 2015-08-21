@@ -1,0 +1,1 @@
+get-wmiobject win32_computersystem | select-object name | out-gauge -type digital

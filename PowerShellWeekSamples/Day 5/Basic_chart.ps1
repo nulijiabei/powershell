@@ -1,0 +1,1 @@
+get-wmiobject win32_perfformatteddata_perfdisk_logicaldisk | select-object name,percentfreespace | out-chart

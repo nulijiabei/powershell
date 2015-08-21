@@ -1,0 +1,1 @@
+get-wmiobject win32_perfformatteddata_perfdisk_logicaldisk |select-object name,percentfreespace | where-object {$_.Name -eq "_Total"} |out-gauge -InnerGauges_Add Radial -InnerGauges_0_Visible True -InnerGauges_0_Size .8 -Border_Color navajowhite -Border_InsideColor skyblue

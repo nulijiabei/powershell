@@ -1,0 +1,1 @@
+get-process | sort-object WS -descending | select-object -first 8 | select-object name,ws |out-chart -gallery pie

@@ -1,0 +1,14 @@
+PS C:\Scripts\PS1\Test> .\GA-List-SQLInstances.ps1
+
+ServerProtocols    Parent                                                 Urn                                                                      Name           Properties UserData    State
+---------------    ------                                                 ---                                                                      ----           ---------- --------    -----
+{Np, Sm, Tcp, Via} Microsoft.SqlServer.Management.Smo.Wmi.ManagedComputer ManagedComputer[@Name='WIN-SQL1']/ServerInstance[@Name='BERT']           BERT           {}                  Existing
+{Np, Sm, Tcp, Via} Microsoft.SqlServer.Management.Smo.Wmi.ManagedComputer ManagedComputer[@Name='WIN-SQL1']/ServerInstance[@Name='BLACKBERRY']     BLACKBERRY     {}                  Existing
+{Np, Sm, Tcp, Via} Microsoft.SqlServer.Management.Smo.Wmi.ManagedComputer ManagedComputer[@Name='WIN-SQL1']/ServerInstance[@Name='CORPORATE']      CORPORATE      {}                  Existing
+{Np, Sm, Tcp, Via} Microsoft.SqlServer.Management.Smo.Wmi.ManagedComputer ManagedComputer[@Name='WIN-SQL1']/ServerInstance[@Name='EQCAS']          EQCAS          {}                  Existing
+{Np, Sm, Tcp, Via} Microsoft.SqlServer.Management.Smo.Wmi.ManagedComputer ManagedComputer[@Name='WIN-SQL1']/ServerInstance[@Name='GEODNA54']       GEODNA54       {}                  Existing
+{Np, Sm, Tcp, Via} Microsoft.SqlServer.Management.Smo.Wmi.ManagedComputer ManagedComputer[@Name='WIN-SQL1']/ServerInstance[@Name='ICT_OPERATIONS'] ICT_OPERATIONS {}                  Existing
+{Np, Sm, Tcp, Via} Microsoft.SqlServer.Management.Smo.Wmi.ManagedComputer ManagedComputer[@Name='WIN-SQL1']/ServerInstance[@Name='MSSQLSERVER']    MSSQLSERVER    {}                  Existing
+{Np, Sm, Tcp, Via} Microsoft.SqlServer.Management.Smo.Wmi.ManagedComputer ManagedComputer[@Name='WIN-SQL1']/ServerInstance[@Name='VMWARE']         VMWARE         {}                  Existing
+{Np, Sm, Tcp, Via} Microsoft.SqlServer.Management.Smo.Wmi.ManagedComputer ManagedComputer[@Name='WIN-SQL1']/ServerInstance[@Name='VMWARE_ORCH']    VMWARE_ORCH    {}                  Existing
+

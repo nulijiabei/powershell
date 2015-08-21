@@ -1,0 +1,85 @@
+PS C:\cache\ps1\Check-Daily> .\Check-SysDiskFree75.ps1 .\servernames80.txt
+Check-WmiObject : Could not contact to Wmi Provider NameSpace root\cimv2 on PROXY3
+At C:\cache\ps1\Check-Daily\Check-SysDiskFree75.ps1:115 char:37
++     $CanWMIConnect = Check-WmiObject <<<<  -NameSpace "root\cimv2" -WmiHost $computer
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Check-WmiObject
+
+WARNING: Wmi Object is not available. for Host PROXY3
+Check-WmiObject : Could not contact to Wmi Provider NameSpace root\cimv2 on WIN-D-SDESK2
+At C:\cache\ps1\Check-Daily\Check-SysDiskFree75.ps1:115 char:37
++     $CanWMIConnect = Check-WmiObject <<<<  -NameSpace "root\cimv2" -WmiHost $computer
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Check-WmiObject
+
+WARNING: Wmi Object is not available. for Host WIN-D-SDESK2
+Check-WmiObject : Could not contact to Wmi Provider NameSpace root\cimv2 on WIN-MDT2010
+At C:\cache\ps1\Check-Daily\Check-SysDiskFree75.ps1:115 char:37
++     $CanWMIConnect = Check-WmiObject <<<<  -NameSpace "root\cimv2" -WmiHost $computer
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Check-WmiObject
+
+WARNING: Wmi Object is not available. for Host WIN-MDT2010
+Check-WmiObject : Could not contact to Wmi Provider NameSpace root\cimv2 on WIN-AGSSOC1-MEX
+At C:\cache\ps1\Check-Daily\Check-SysDiskFree75.ps1:115 char:37
++     $CanWMIConnect = Check-WmiObject <<<<  -NameSpace "root\cimv2" -WmiHost $computer
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Check-WmiObject
+
+WARNING: Wmi Object is not available. for Host WIN-AGSSOC1-MEX
+Check-WmiObject : Could not contact to Wmi Provider NameSpace root\cimv2 on WIN-AGSSOC2-MEX
+At C:\cache\ps1\Check-Daily\Check-SysDiskFree75.ps1:115 char:37
++     $CanWMIConnect = Check-WmiObject <<<<  -NameSpace "root\cimv2" -WmiHost $computer
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Check-WmiObject
+
+WARNING: Wmi Object is not available. for Host WIN-AGSSOC2-MEX
+
+WARNING: Wmi Object is not available. for Host WIN-GIS1
+Addding WIN-HDPS1 to Report
+Addding WIN-UDEM3 to Report
+Addding WIN-AGSSOM-TST to Report
+Not Addding WIN-NETMON1 to Report
+Addding WIN-AGSSOM-DEV to Report
+Addding WIN-AGSGP-DEV to Report
+Addding WIN-AGSGP-TST to Report
+Addding WIN-AGSSOM-PRD to Report
+Not Addding WIN-AGSGP-PRD to Report
+Check-WmiObject : Could not contact to Wmi Provider NameSpace root\cimv2 on WIN-UDEM1
+At C:\cache\ps1\Check-Daily\Check-SysDiskFree75.ps1:115 char:37
++     $CanWMIConnect = Check-WmiObject <<<<  -NameSpace "root\cimv2" -WmiHost $computer
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Check-WmiObject
+
+WARNING: Wmi Object is not available. for Host WIN-UDEM1
+Not Addding WIN-UDEM4 to Report
+Addding WIN-GWATER2 to Report
+Addding SATSAN to Report
+Addding WIN-HSSM1 to Report
+Not Addding WIN-MA01 to Report
+Not Addding WIN-MA00 to Report
+Not Addding WIN-DRHDPS1 to Report
+Not Addding WIN-GWATER1 to Report
+Addding WIN-NETMON2 to Report
+Addding WIN-P-SDESK2 to Report
+Addding WIN-ENTSEARCH to Report
+Addding WIN-TRIM2-PROD to Report
+Addding WIN-TRIM1-DEV to Report
+Check-WmiObject : Could not contact to Wmi Provider NameSpace root\cimv2 on WIN-D-SDESK2
+At C:\cache\ps1\Check-Daily\Check-SysDiskFree75.ps1:115 char:37
++     $CanWMIConnect = Check-WmiObject <<<<  -NameSpace "root\cimv2" -WmiHost $computer
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Check-WmiObject
+
+WARNING: Wmi Object is not available. for Host WIN-D-SDESK2
+Check-WmiObject : Could not contact to Wmi Provider NameSpace root\cimv2 on WIN-D-SDESK1
+At C:\cache\ps1\Check-Daily\Check-SysDiskFree75.ps1:115 char:37
++     $CanWMIConnect = Check-WmiObject <<<<  -NameSpace "root\cimv2" -WmiHost $computer
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Check-WmiObject
+
+WARNING: Wmi Object is not available. for Host WIN-D-SDESK1
+Not Addding WIN-AGSIMG-PRD to Report
+Addding SCCM1 to Report
+Addding WIN-VULMGT1 to Report
+PS C:\cache\ps1\Check-Daily>

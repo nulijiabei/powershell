@@ -1,0 +1,55 @@
+PS C:\Health\ADReports> .\GA-DomainAdministrativeGroupMonitor.ps1
+
+DefaultNamingContext                               Type
+--------------------                               ----
+DC=agso,DC=gov,DC=au                               ActiveDirectory
+No Previous file was available to compare for Domain Administrative Accounts
+There are 4 members in the Domain Administrative Accounts group
+There are no changes in the Domain Administrative Accounts group
+
+
+
+PS C:\Health\ADReports> .\GA-DomainAdministrativeGroupMonitor.ps1
+
+DefaultNamingContext                               Type
+--------------------                               ----
+DC=agso,DC=gov,DC=au                               ActiveDirectory
+There are 3 members in the Domain Administrative Accounts group
+
+Name    SideIndicator
+----    -------------
+domtest <=
+
+
+
+PS C:\Health\ADReports> .\GA-DomainAdministrativeGroupMonitor.ps1
+
+DefaultNamingContext                               Type
+--------------------                               ----
+DC=agso,DC=gov,DC=au                               ActiveDirectory
+There are 4 members in the Domain Administrative Accounts group
+
+Name      SideIndicator
+----      -------------
+ExInstall =>
+
+
+
+PS C:\Health\ADReports> .\GA-DomainAdministrativeGroupMonitor.ps1
+
+DefaultNamingContext                               Type
+--------------------                               ----
+DC=agso,DC=gov,DC=au                               ActiveDirectory
+There are 3 members in the Domain Administrative Accounts group
+
+Name      SideIndicator
+----      -------------
+ExInstall <=
+
+
+
+WARNING: Domain Administrative Accounts - Change in Group Members! @{Name=ExInstall; MemberChange=Removed from Group;
+DomainGroup=Domain Administrative Accounts} Send To GAAdmins@agso.gov.au
+
+
+PS C:\Health\ADReports>
