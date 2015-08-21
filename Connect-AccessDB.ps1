@@ -1,16 +1,12 @@
 # Functions for connecting to and working with Access databases
-# Matt Wilson
-# May 2009
-
+# Matt Wilson May 2009
 function Connect-AccessDB ($global:dbFilePath) {
 	
 	# Test to ensure valid path to database file was supplied
 	if (-not (Test-Path $dbFilePath)) {
 		Write-Error "Invalid Access database path specified. Please supply full absolute path to database file!"
 	}
-	
 	# TO-DO: Add check to ensure file is either MDB or ACCDB
-	
 	# Create a new ADO DB connection COM object, which will give us useful methods & properties such as "Execute"!
 	$global:AccessConnection = New-Object -ComObject ADODB.Connection
 	
@@ -29,7 +25,6 @@ function Connect-AccessDB ($global:dbFilePath) {
 }
 
 function Open-AccessRecordSet ($global:SqlQuery) {
-
 	# Ensure SQL query isn't null
 	if ($SqlQuery.length -lt 1) {
 		Throw "Please supply a SQL query for the recordset selection!"
@@ -48,14 +43,12 @@ function Open-AccessRecordSet ($global:SqlQuery) {
 
 function Get-AccessRecordSetStructure {
 	# TO-DO: Should probably test to ensure valid $accessRecordSet exists & has records
-	
 	# Cycle through the fields in the recordset, but only pull out the properties we care about
 	Write-Output $AccessRecordSet.Fields | Select-Object Name,Attributes,DefinedSize,type
 }
 	
 function Convert-AccessRecordSetToPSObject {
 	# TO-DO: Should probably test to ensure valid $accessRecordSet exists & has records
-	
 	# Get an array of field names which we will later use to create custom PoSh object names
 	$fields = Get-AccessRecordSetStructure
 	
@@ -116,7 +109,6 @@ function Close-AccessRecordSet {
 function Disconnect-AccessDB {
 	$AccessConnection.Close()
 }
-
 
 # Connect-AccessDB "C:\fso\ConfigurationMaintenance.accdb"
 # Open-AccessRecordSet "SELECT * FROM printers"
