@@ -1,14 +1,13 @@
 #http://poshcode.org/2683
-function read-stream ([Parameter(Posistion=0,Mandatory=$true)][validatenotnull()]
-		[System.Net.Sockets.NetworkStream]$stream,
-		[String]$expect = "")
+# example.
+#Get-content commands.txt | send-command -hostname telnetserver.somewhere.com -user someuser -password somepassword
+#
+function read-stream ([Parameter(Posistion=0,Mandatory=$true)][validatenotnull()][System.Net.Sockets.NetworkStream]$stream,[String]$expect = "")
 {
 	$buffer = new-object system.byte[] 1024
 	$enc = new-object system.text.asciiEncoding
-
 	## Read all the data available from the stream, writing it to the 
 	## screen when done.
-
 	## Allow data to buffer
 	start-sleep -m 100
 	$output = ""
@@ -23,18 +22,17 @@ function read-stream ([Parameter(Posistion=0,Mandatory=$true)][validatenotnull()
 }
 
 function send-command ([parameter(position=0,Mandatory=$true)][validatenotnull()]
-		[String]$hostname,
+	[String]$hostname,
 	[parameter(position=1,Mandatory=$true)][validatenotnull()]
-		[String]$User,
+	[String]$User,
 	[parameter(position=2,Mandatory=$true)][validatenotnull()]
-		[String]$Password, 
+	[String]$Password, 
 	[parameter(position=3,Mandatory=$true,valuefrompipeline=$true)][validatenotnull()]
-		[String]$InputObject,
-		[string]$Expect = "")
+	[String]$InputObject,
+	[string]$Expect = "")
 {
 	begin
 	{
-		
 		$sock = new-object system.net.sockets.tcpclient($hostname,23)
 		$str = $sock.GetStream()
 		$wrt = new-object system.io.streamwriter($str)
